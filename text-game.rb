@@ -21,6 +21,11 @@ puts "\n"
 answer1 = gets.chomp
     if answer1.upcase == 'FIGHT THEM'
         puts 'You beat them up and saved the kid!'
+        puts "\n"
+        puts'       
+        ( •_•)                (•_• )     (•_• )    (•_• )
+        ( ง )ง                ୧( ୧ )    ୧( ୧ )    ୧( ୧ )
+        /︶\                    /︶\      /︶\      /︶\ '
     elsif answer1.upcase == 'LET THEM CONTINUE'
         puts 'The kid got knocked out, while the high schoolers turn to you and kick you in the groin. GAME OVER'
         exit(0)
@@ -92,16 +97,39 @@ answer3 = gets.chomp
         puts 'Invalid input, GAME OVER!'
         exit(0)
     end
+puts 'The training begins!'
+puts "
+,.
+\-'__
+/ o.__o____ 
+\/_/ /.___/--,
+ ||\'
+ | /
+ \_\
+ -'' 
+"
+puts"\n"
+puts'type OKAY to continue'
+answer_okay = gets.chomp
+if answer_okay.upcase == 'OKAY'
+    puts 'continued..'
+end
 
 puts "\n"
 puts "After training the kid, you decide you want to make this a living. You have the kid tell his friends about it and now you have enough kids to start your own DOJO! thus"
 puts "\n"
 puts'
-__  __     ______     ______     ______     ______        __  __     ______     __    
-/\ \/ /    /\  __ \   /\  == \   /\  == \   /\  __ \      /\ \/ /    /\  __ \   /\ \   
-\ \  _"-.  \ \ \/\ \  \ \  __<   \ \  __<   \ \  __ \     \ \  _"-.  \ \  __ \  \ \ \  
- \ \_\ \_\  \ \_____\  \ \_____\  \ \_\ \_\  \ \_\ \_\     \ \_\ \_\  \ \_\ \_\  \ \_\ 
-  \/_/\/_/   \/_____/   \/_____/   \/_/ /_/   \/_/\/_/      \/_/\/_/   \/_/\/_/   \/_/  IS BACK'
+
+   ▄█   ▄█▄  ▄██████▄  ▀█████████▄     ▄████████    ▄████████         ▄█   ▄█▄    ▄████████  ▄█  
+  ███ ▄███▀ ███    ███   ███    ███   ███    ███   ███    ███        ███ ▄███▀   ███    ███ ███  
+  ███▐██▀   ███    ███   ███    ███   ███    ███   ███    ███        ███▐██▀     ███    ███ ███▌ 
+ ▄█████▀    ███    ███  ▄███▄▄▄██▀   ▄███▄▄▄▄██▀   ███    ███       ▄█████▀      ███    ███ ███▌ 
+▀▀█████▄    ███    ███ ▀▀███▀▀▀██▄  ▀▀███▀▀▀▀▀   ▀███████████      ▀▀█████▄    ▀███████████ ███▌ 
+  ███▐██▄   ███    ███   ███    ██▄ ▀███████████   ███    ███        ███▐██▄     ███    ███ ███  
+  ███ ▀███▄ ███    ███   ███    ███   ███    ███   ███    ███        ███ ▀███▄   ███    ███ ███  
+  ███   ▀█▀  ▀██████▀  ▄█████████▀    ███    ███   ███    █▀         ███   ▀█▀   ███    █▀  █▀   
+  ▀                                   ███    ███                     ▀                           
+  IS BACK'
 puts "\n"
 puts'             ____
             / . .\
@@ -118,10 +146,13 @@ puts "\n"
 answer4 = gets.chomp
     if answer4.upcase == "THE NINJA WAY"
         puts 'Students are badly hurt by ninja stars, the dojo must shut down. GAME OVER'
+        exit(0)
     elsif answer4.upcase == "FIGHT DIRTY"
         puts 'The students end up getting arrested for their dirty fighting ways. GAME OVER'
+        exit(0)
     elsif answer4.upcase == "INVITE OTHER DOJO"
         puts 'They politely decline.. :( sorry GAME OVER'
+        exit(0)
     elsif answer4.upcase == "CONFRONT"
         puts 'You meet sensei LaRussle, of Miyagi-die Karate'
     else
@@ -139,6 +170,7 @@ answer5 = gets.chomp
     puts '* Eye of the Tiger plays in the background *'
  elsif answer5.upcase == "SHUT DOWN"
     puts 'You give up and shut down the dojo and now live in a cardboard box down by the river. GAME OVER'
+    
     puts "\n"
     puts "
               ____.----.
@@ -169,8 +201,12 @@ answer5 = gets.chomp
                  `-|__.--'
                  
                  "
+
+
+     exit(0)
  elsif answer5.upcase == "BEATEN"
     puts 'LaRussle crane kicks you in the head, you get knocked out, and awaken outside of your now destroyed dojo. GAME OVER'
+    exit(0)
  else
     puts 'Invalid input, GAME OVER!'
     exit(0)
@@ -178,22 +214,128 @@ answer5 = gets.chomp
 
 puts "\n"
 puts 'You are now preparing for your fight with LaRussle, how do you prepare?'
-puts 'Do you EAT right and train, do you DRINK beer and eat pizza, do you acquire a GUN to bring to the fight?'
+puts 'Do you EAT right and train, do you DRINK beer and eat pizza'
 puts "\n"
 
 answer6 = gets.chomp
     if answer6.upcase == "EAT"
         puts 'Your mind and body are properly prepared for the upcoming battle'
+        puts ''
     elsif answer6.upcase == "DRINK"
-        puts 'You are slightly drunk and overly full from too much pizza, you decide to take a nap and miss the fight. GAME OVER'
-    elsif answer6.upcase == "GUN"
-        puts "You're locked and loaded, do you meet LaRussle? YES or NO"
+        puts 'You are slightly drunk and overly full from too much pizza, do you take a nap? YES or NO'
+
             answer7 = gets.chomp
-            if answer7. == "YES"
-            puts "You walk in with a gun"
-            elsif answer7. == "NO"
-            puts "You decide to fight the honorable way instead and throw the gun away"
+            if answer7.upcase == "YES"
+            puts "You take a nice nap after too much beer and pizza, you fall asleep and miss the fight GAME OVER zzz " 
+            exit(0)
+            elsif answer7.upcase == "NO"
+            puts "Feeling nice and loose after a tasty beer you're ready to fight."
+
+            puts "
+            .   *   ..  . *  *
+            *  * @()Ooc()*   o  .
+                (Q@*0CG*O()  ___
+               | _________/|/ _ \
+               |  |  |  |  | / | |
+               |  |  |  |  | | | |
+               |  |  |  |  | | | |
+               |  |  |  |  | | | |
+               |  |  |  |  | | | |
+               |  |  |  |  |  _| |
+               |  |  |  |  | ___/
+               | _|__|__|_/|
+                 _________/"
     end
 end
+
+puts"\n"
+puts'type OKAY to continue'
+answer_okay2 = gets.chomp
+if answer_okay2.upcase == 'OKAY'
+    puts 'continued..'
+end
+
+puts 'After a week of training, and mentally preparing you are ready to fight the wicked LaRussel Miyagi-Die. The students from each dojo watch closely as the match is about to begin.'
+
 puts "\n"
 puts 'The fight begins'
+puts "
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@     ||/        |//                                                        @
+@     /|`|      /'/|                                             /|         @
+@        | |  / /           ::::: |~~|||               ;;;;;    {  }        @
+@          |/ /             :: -| `~~||  |             /- ;;    _{}_        @
+@         / /| |           /`---',.____|   | _   /~~~~~'___'     ||         @
+@        ( /  | )         |  ||   |,_____|   |)/ /   |//   |     ||         @
+@         `    '          ||   |___|_ ___  |  |/||  // /  /      ||         @
+@                         |__|_______|-'''  (|| ______/  /       ||         @
+@                         /~~~~~~~~`|        (=`|______/         ||         @
+@                        /___________|         `|    ||          ||         @
+@                        /    / |    |          | |__ ||         ||         @
+@   =|==||====||====.  /    /    |    |         |   |  ||        ||         @
+@    =|=||====||==.   |   /       |    )        |   |            `'         @
+@_____ /||----||| ____|   |________|   |________|   |_______________________@
+@~~~~~//~~~~~~~~||~~~~|___|~~~~~~~~|___|~~~~~~~~|   |~~~~~~~~~~~~~~~~~~~~~~~@
+@                    __| |          | |__       |___|                       @
+@                    `~~~'          `~~~~'       | |                        @
+@                                                `~~'                       @
+@                                                                           @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+
+puts "\n"
+puts "The fight is long and grueling.. both fighters exhausted but unwavering in their determination to defeat the other.. The fight has come down to the final moments. What move do you use?"
+puts "CRANE KICK, GROIN PUNCH, KAMEHAMEHA, or PUNCH right in the face"
+
+answer8 = gets.chomp
+    if answer8.upcase == "CRANE KICK"
+        puts "LeRussle responds: 'HA! You can't beat me with my own move.."
+        puts 'LeRussle counters and knocks you out. GAME OVER'
+        exit(0)
+    elsif answer8.upcase == "GROIN PUNCH"
+        puts 'You punch LeRussle in the groin, shocking the crowd and the referee, who disqualifies you immediately. GAME OVER'
+        exit(0)
+    elsif answer8.upcase == "KAMEHAMEHA"
+        puts "LeRussle retreats knowing that ability is not real, but doesn't want to take the chance. He ran away, so you win by default I guess?"
+        puts '<( 0_0)> (================ʚ-(>O< ʚ–)'
+    elsif answer8.upcase == "PUNCH"
+        puts "You punch LeRussle right in the face. LeRussle can't take a punch so he gets knocked out, leaving you victorious!"
+    end
+puts "\n"
+puts 'You have succesfully completed Kobra Kai!'
+
+puts"\n"
+puts'type OKAY to continue'
+answer_okay3 = gets.chomp
+if answer_okay3.upcase == 'OKAY'
+    puts '
+    /\ \/ /    /\  __ \   /\  == \   /\  == \   /\  __ \      /\ \/ /    /\  __ \   /\ \                             
+    \ \  _"-.  \ \ \/\ \  \ \  __<   \ \  __<   \ \  __ \     \ \  _"-.  \ \  __ \  \ \ \                            
+     \ \_\ \_\  \ \_____\  \ \_____\  \ \_\ \_\  \ \_\ \_\     \ \_\ \_\  \ \_\ \_\  \ \_\                           
+      \/_/\/_/   \/_____/   \/_____/   \/_/ /_/   \/_/\/_/      \/_/\/_/   \/_/\/_/   \/_/                           
+                                                                                                                     
+     __   __     ______     __   __   ______     ______        _____     __     ______     ______                    
+    /\ "-.\ \   /\  ___\   /\ \ / /  /\  ___\   /\  == \      /\  __-.  /\ \   /\  ___\   /\  ___\                   
+    \ \ \-.  \  \ \  __\   \ \ \'/   \ \  __\   \ \  __<      \ \ \/\ \ \ \ \  \ \  __\   \ \___  \                  
+     \ \_\\"\_\  \ \_____\  \ \__|    \ \_____\  \ \_\ \_\     \ \____-  \ \_\  \ \_____\  \/\_____\                 
+      \/_/ \/_/   \/_____/   \/_/      \/_____/   \/_/ /_/      \/____/   \/_/   \/_____/   \/_____/                 
+                                                                                                                     
+     ______     ______   ______     __     __  __     ______        ______   __     ______     ______     ______     
+    /\  ___\   /\__  _\ /\  == \   /\ \   /\ \/ /    /\  ___\      /\  ___\ /\ \   /\  == \   /\  ___\   /\__  _\    
+    \ \___  \  \/_/\ \/ \ \  __<   \ \ \  \ \  _"-.  \ \  __\      \ \  __\ \ \ \  \ \  __<   \ \___  \  \/_/\ \/    
+     \/\_____\    \ \_\  \ \_\ \_\  \ \_\  \ \_\ \_\  \ \_____\     \ \_\    \ \_\  \ \_\ \_\  \/\_____\    \ \_\    
+      \/_____/     \/_/   \/_/ /_/   \/_/   \/_/\/_/   \/_____/      \/_/     \/_/   \/_/ /_/   \/_____/     \/_/    
+                                                                                                                     
+     ______     ______   ______     __     __  __     ______        __  __     ______     ______     _____           
+    /\  ___\   /\__  _\ /\  == \   /\ \   /\ \/ /    /\  ___\      /\ \_\ \   /\  __ \   /\  == \   /\  __-.         
+    \ \___  \  \/_/\ \/ \ \  __<   \ \ \  \ \  _"-.  \ \  __\      \ \  __ \  \ \  __ \  \ \  __<   \ \ \/\ \        
+     \/\_____\    \ \_\  \ \_\ \_\  \ \_\  \ \_\ \_\  \ \_____\     \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \____-        
+      \/_____/     \/_/   \/_/ /_/   \/_/   \/_/\/_/   \/_____/      \/_/\/_/   \/_/\/_/   \/_/ /_/   \/____/        
+                                                                                                                     
+     __   __     ______        __    __     ______     ______     ______     __  __                                  
+    /\ "-.\ \   /\  __ \      /\ "-./  \   /\  ___\   /\  == \   /\  ___\   /\ \_\ \                                 
+    \ \ \-.  \  \ \ \/\ \     \ \ \-./\ \  \ \  __\   \ \  __<   \ \ \____  \ \____ \                                
+     \ \_\\"\_\  \ \_____\     \ \_\ \ \_\  \ \_____\  \ \_\ \_\  \ \_____\  \/\_____\                               
+      \/_/ \/_/   \/_____/      \/_/  \/_/   \/_____/   \/_/ /_/   \/_____/   \/_____/                               
+                                                                                                                     
+'
+end
