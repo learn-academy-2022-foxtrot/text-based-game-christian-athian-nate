@@ -1,4 +1,8 @@
-
+p'How it all starts'
+p' You are a man thats down on his luck struggling to find his path'
+puts"\n"
+puts'This is the Lawrence story'
+puts"\n"
 puts "You're inside of a store, outside you can see a bunch of high schoolers beating up on one kid."
 puts "Do you go outside? Yes or No"
 
